@@ -1,0 +1,20 @@
+{% extends 'layouts/tienda.html' %} {% block content %}
+
+<div class="min-vh-100 d-flex flex-colum py-4">
+    <div class="container">
+        <h3 class="animate__animated animate__bounceInDown animate__delay-0.2s text-center">CONTACTO</h3>
+        <div class="row">
+            <div class="col-lg-6 col-sm-04 mx-auto animate__animated animate__bounceInUp animate__delay-0.3s">
+                {% load crispy_forms_tags %}
+                <form method="post" action="">
+                    {% csrf_token %} {{ form | crispy }}
+                    <div class="justify-content-center">
+                        <button type="reset" class="btn btn-secondary mt-1 mx-2" button ">Cancelar</button>
+                        <button type="submit " class="btn btn-danger mt-1 " button ">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

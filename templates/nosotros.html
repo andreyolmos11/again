@@ -1,0 +1,28 @@
+{% extends 'layouts/tienda.html' %}{% load static %} {% block content %}
+
+<div class="min-vh-100 d-flex flex-colum py-2">
+    <div class="container">
+        <h3 class="animate__animated animate__bounceInDown animate__delay-0.3s text-center py-4">JAGUARETE KAA S.A.</h3>
+        <div class="row py-auto">
+            <div class="col-lg-8">
+                <p class="animate__animated animate__backInRight animate__delay-0.3s text-justify">
+                    Ofrecemos una amplia variedad de productos de la mejor calidad, desde alimentos balanceados hasta juguetes y accesorios de última tendencia. Además, contamos con un equipo de expertos que te brindará asesoramiento y cuidados personalizados para tus mascotas.
+                </p>
+                <p class="animate__animated animate__backInRight animate__delay-0.3s text-justify">
+                    En nuestra tienda encontrarás todo lo necesario para el cuidado de tu mascota, ya sea un perro, un gato, un pájaro, un pez o cualquier otro animalito que te acompañe en tu hogar.
+                </p>
+            </div>
+
+            <div class="col-lg-4 animate__animated animate__bounceInUp animate__delay-0.4s ">
+                <img class="img-fluid ml-auto" src="{% static 'assets/team.jpg' %}" alt="team">
+            </div>
+
+        </div>
+        <div class="row animate__animated animate__bounceInUp animate__delay-1s">
+            <p class="mb-1">Teléfono: +57 3102688068 | +57 3041394025</p>
+            <p> Ibagué-Tolima, Colombia</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
